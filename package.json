@@ -1,0 +1,30 @@
+{
+  "name": "slimer-html-pdf",
+  "version": "0.10.2",
+  "description": "HTML to PDF converter that uses slimerjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkopa/slimer-html-pdf.git"
+  },
+  "keywords": [
+    "html",
+    "pdf",
+    "slimer",
+    "slimerjs",
+    "node",
+    "nodejs"
+  ],
+  "author": "Marcin Kopa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkopa/slimer-html-pdf/issues"
+  },
+  "homepage": "https://github.com/mkopa/slimer-html-pdf#readme",
+  "dependencies": {
+    "slimerjs": "^0.10.2"
+  }
+}
