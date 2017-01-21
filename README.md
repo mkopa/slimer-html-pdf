@@ -1,6 +1,6 @@
 # phantomjs 2.5.0 (beta)
-##  full support for HTML5 (including FLEX)
-##  problems with rendering to pdf (rendering to images (png, jpeg) working correctly)
+full support for HTML5 (including FLEX)
+problems with rendering to pdf (rendering to images (png, jpeg) working correctly)
 
 # slimerjs - similar to phantomjs but uses Mozilla GECKO rendering engine.
 
