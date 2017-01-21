@@ -1,6 +1,6 @@
 var slimerHtmlPdf = require('./lib/index');
 
-slimerHtmlPdf('http://github.com', 'github.pdf')
+slimerHtmlPdf('http://github.com', './github.pdf')
   .then(() => {
     console.log('Done!');
   })
