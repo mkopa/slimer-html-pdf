@@ -4,7 +4,7 @@
   "description": "HTML to PDF converter that uses slimerjs",
   "main": "lib/index.js",
   "scripts": {
-    "test": "node example.js"
+    "test": "nodeunit --reporter=minimal test/tests.js && eslint ."
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,12 @@
   },
   "homepage": "https://github.com/mkopa/slimer-html-pdf#readme",
   "dependencies": {
+    "babel-eslint": "^7.1.1",
     "slimerjs": "^0.10.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "2.7.0",
+    "nodeunit": "0.9.1",
+    "webdriverio": "~4.2.3"
+  }
 }
