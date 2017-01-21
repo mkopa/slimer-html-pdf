@@ -10,7 +10,7 @@ problems with rendering to pdf (rendering to images (png, jpeg) working correctl
 # don't remind install npm first
 sudo apt-get install -y xvfb firefox
 npm i slimerjs -g
-# add below command into system startup script
+# TODO: add below command into system startup script
 Xvfb :19 -screen 0 1024x768x16 &
 export DISPLAY=:19
 ```
