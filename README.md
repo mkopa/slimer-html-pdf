@@ -1,3 +1,4 @@
+![alt tag](https://api.travis-ci.org/mkopa/slimer-html-pdf.svg?branch=master)
 # phantomjs 2.5.0 (beta)
 full support for HTML5 (including FLEX)
 problems with rendering to pdf (rendering to images (png, jpeg) working correctly)
