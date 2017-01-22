@@ -25,11 +25,11 @@
   },
   "homepage": "https://github.com/mkopa/slimer-html-pdf#readme",
   "dependencies": {
-    "babel-eslint": "^7.1.1",
     "slimerjs": "^0.10.2"
   },
   "devDependencies": {
     "eslint": "2.7.0",
+    "babel-eslint": "^7.1.1",
     "nodeunit": "0.9.1",
     "webdriverio": "~4.2.3"
   }
