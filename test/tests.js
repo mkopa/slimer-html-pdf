@@ -5,7 +5,7 @@ exports.renderPdf = function (test) {
   if (fs.existsSync('github.pdf')) {
     fs.unlinkSync('github.pdf')
   }
-  slimerHtmlPdf.convertXvfb('http://github.com', './github.pdf')
+  slimerHtmlPdf.convert('http://github.com', './github.pdf')
   .then(() => {
     test.ok(true, 'Successful')
     test.done()

@@ -8,7 +8,7 @@ var options = {
       }
 }
 
-slimerHtmlPdf.convertXvfb('http://github.com', './github.pdf', options)
+slimerHtmlPdf.convert('http://github.com', './github.pdf', options)
   .then( msg => {
     console.log('Successful', msg)
   })

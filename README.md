@@ -26,7 +26,7 @@ var options = {
       }
 }
 
-slimerHtmlPdf.convertXvfb('http://github.com', './github.pdf', options)
+slimerHtmlPdf.convert('http://github.com', './github.pdf', options)
   .then( msg => {
     console.log('Successful', msg)
   })
@@ -39,8 +39,6 @@ slimerHtmlPdf.convert(source, output, options)
 source - HTML source
 output - save path
 options - options (see more: http://docs.slimerjs.org/current/api/webpage.html)
-
-slimerHtmlPdf.convertXvfb - for testing and production, uses Xvfb frame buffer
 ```
 ### Tip:
 <small>How to break a page?</small>
