@@ -5,7 +5,7 @@
 ---
 ### Dependencies:
 * Firefox - free and open-source web browser
-* xvfb - X virtual framebuffer
+* Xvfb - X virtual framebuffer
 ```
 $ sudo apt-get install -y firefox xvfb
 ```
