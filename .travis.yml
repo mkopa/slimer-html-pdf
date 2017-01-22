@@ -8,8 +8,4 @@ addons:
 language: node_js
 node_js:
   - "6"
-install:
-  - Xvfb :19 -screen 0 1024x768x16
-  - export DISPLAY=:19
-script:
-  - npm test
+
