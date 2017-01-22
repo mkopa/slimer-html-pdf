@@ -1,23 +1,41 @@
-![alt tag](https://api.travis-ci.org/mkopa/slimer-html-pdf.svg?branch=master)
-# phantomjs 2.5.0 (beta)
-full support for HTML5 (including FLEX)
-problems with rendering to pdf (rendering to images (png, jpeg) working correctly)
-
-# slimerjs - similar to phantomjs but uses Gecko and SpiderMonkey.
-
-## Install dependencies on virtual machine
+# slimer-html-pdf - convert any HTML document to PDF format using slimerjs (Gecko)
+![Travis-ci Build Status](https://api.travis-ci.org/mkopa/slimer-html-pdf.svg?branch=master)
+<p>full support for HTML5 (including FLEX)<p>
+<p>more info: https://slimerjs.org/<p>
+---
+### Dependencies:
+<smallf>irefox, xvfb</small>
 ```
-#!/bin/sh
-# don't remind install npm first
-sudo apt-get install -y xvfb firefox
-npm i slimerjs -g
-# TODO: add below command into system startup script
-Xvfb :19 -screen 0 1024x768x16 &
-export DISPLAY=:19
+$ sudo apt-get install -y firefox xvfb
 ```
+### Usage:
+```
+$ npm i slimer-html-pdf --save
+```
+```javascript
+var slimerHtmlPdf = require('slimer-html-pdf')
 
-Breaking page
+slimerHtmlPdf.convertXvfb('http://github.com', './github.pdf')
+  .then( msg => {
+    console.log('Successful', msg)
+  })
+  .catch( err => {
+    console.log('Error!', err)
+  })
 ```
+```
+slimerHtmlPdf.convert(source, output, options)
+source - HTML source
+output - save path
+options - options (see more: http://docs.slimerjs.org/current/api/webpage.html)
+
+slimerHtmlPdf.convertXvfb - for testing and production, uses Xvfb frame buffer
+```
+### Tip:
+<small>How to break a page?</small>
+```
+use styles!
+
 page-break-inside: auto|avoid|initial|inherit;
 
 auto	Default. Automatic page breaks
