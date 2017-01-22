@@ -1,6 +1,6 @@
 {
   "name": "slimer-html-pdf",
-  "version": "0.10.2",
+  "version": "0.10.3",
   "description": "HTML to PDF converter that uses slimerjs",
   "main": "lib/index.js",
   "scripts": {
