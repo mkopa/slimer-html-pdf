@@ -1,11 +1,13 @@
 # slimer-html-pdf - convert any HTML document to PDF format using slimerjs (Gecko)
 ![Travis-ci Build Status](https://api.travis-ci.org/mkopa/slimer-html-pdf.svg?branch=master)
-<p>Full support for HTML5 (including FLEX)<p>
-<p>More info: https://slimerjs.org/</p>
----
+
+Full support for HTML5 (including FLEX), more info: https://slimerjs.org/
+
 ### Dependencies:
-* Firefox - free and open-source web browser
-* Xvfb - X virtual framebuffer
+```
+Firefox - free and open-source web browser
+Xvfb - X virtual framebuffer
+```
 ```
 $ sudo apt-get install -y firefox xvfb
 ```
