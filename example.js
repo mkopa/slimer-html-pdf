@@ -1,8 +1,8 @@
 var slimerHtmlPdf = require('./lib/index')
 
-slimerHtmlPdf('http://github.com', './github.pdf')
-  .then(() => {
-    console.log('Done!')
+slimerHtmlPdf.convertXvfb('http://github.com', './github.pdf')
+  .then( msg => {
+    console.log('Successful', msg)
   })
   .catch( err => {
     console.log('Error!', err)
