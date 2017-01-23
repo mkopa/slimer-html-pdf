@@ -45,14 +45,23 @@ options - options (see more: http://docs.slimerjs.org/current/api/webpage.html)
 ```
 use styles!
 
-page-break-inside: auto|avoid|initial|inherit;
+page-break-after: auto|always|avoid|left|right|initial|inherit;
 
 auto	Default. Automatic page breaks
-avoid	Avoid page break inside the element (if possible)
-initial	Sets this property to its default value.
-inherit	Inherits this property from its parent element.
+always	Always insert a page break after the element
+avoid	 Avoid page break after the element (if possible)
+left	Insert page breaks after the element so that the next page is formatted as a left page
+right	Insert page breaks after the element so that the next page is formatted as a right page
+initial	Sets this property to its default value. Read about initial
+inherit	Inherits this property from its parent element. Read about inherit
 ```
 e.g.
+```css
+@media print {
+    footer {page-break-after: always;}
+}
+```
+or
 ```html
-<div style="page-break-before:avoid;"><!-- content --></div>
+<p style="page-break-after: always ">&nbsp;</p>
 ```
