@@ -1,7 +1,7 @@
 const fs = require('fs')
 const slimerHtmlPdf = require('../lib/index')
 
-exports.renderPdf = function (test) {
+exports.convertHtmlToPdf = function (test) {
   if (fs.existsSync('github.pdf')) {
     fs.unlinkSync('github.pdf')
   }
@@ -16,11 +16,17 @@ exports.renderPdf = function (test) {
   })
 }
 
-exports.checkFileExists = function (test) {
+exports.checkOutputFileExists = function (test) {
+  let fileExists = fs.existsSync('github.pdf')
+  test.ok(fileExists, 'Pdf file should have been created')
+  test.done()
+}
+
+exports.removeOutputFile = function (test) {
   let fileExists = fs.existsSync('github.pdf')
   if (fileExists) {
     fs.unlinkSync('github.pdf')
   }
-  test.ok(fileExists, 'Pdf file should have been created and removed')
+  test.ok(fileExists, 'Pdf file should have been removed')
   test.done()
 }

@@ -4,7 +4,7 @@
   "description": "HTML to PDF converter that uses slimerjs",
   "main": "lib/index.js",
   "scripts": {
-    "test": "nodeunit --reporter=minimal test/tests.js && eslint ."
+    "test": "nodeunit --reporter=default test/tests.js && eslint ."
   },
   "repository": {
     "type": "git",
