@@ -5,7 +5,10 @@ exports.convertHtmlToPdf = function (test) {
   if (fs.existsSync('github.pdf')) {
     fs.unlinkSync('github.pdf')
   }
-  slimerHtmlPdf.convert('http://github.com', './github.pdf')
+  const options = {
+    debug: true
+  }
+  slimerHtmlPdf.convert('http://github.com', './github.pdf', options)
   .then(() => {
     test.ok(true, 'Successful')
     test.done()

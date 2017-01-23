@@ -1,11 +1,12 @@
-var slimerHtmlPdf = require('./lib/index')
+const slimerHtmlPdf = require('./lib/index')
 
-var options = {
-      paperSize: {
-        format: 'A4',
-        orientation: 'portrait',
-        margin: '1cm'
-      }
+const options = {
+  paperSize: {
+    format: 'A4',
+    orientation: 'portrait',
+    margin: '1cm'
+  },
+  debug: true
 }
 
 slimerHtmlPdf.convert('http://github.com', './github.pdf', options)
