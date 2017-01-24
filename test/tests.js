@@ -1,6 +1,8 @@
 const fs = require('fs')
 const slimerHtmlPdf = require('../lib/index')
 
+process.env.XVFB_DISPLAY_LIMIT = 10
+
 exports.convertHtmlToPdf = function (test) {
   if (fs.existsSync('github.pdf')) {
     fs.unlinkSync('github.pdf')
