@@ -13,6 +13,12 @@ var address = system.args[2]
 var output = system.args[3]
 
 page.open(address, function() {
+  //phantom.outputEncoding = 'binary';
+  const pdfBase64 = page.renderBase64({ format: 'pdf' })
+  const slimerResponse = {
+    pdfBase64
+  }
+  console.log(JSON.stringify(slimerResponse))
   page.render(output, {format: 'pdf'})
   phantom.exit()
 })

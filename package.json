@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/mkopa/slimer-html-pdf#readme",
   "dependencies": {
-    "slimerjs": "^0.10.2"
+    "slimerjs": "^0.10.3"
   },
   "devDependencies": {
     "eslint": "2.7.0",

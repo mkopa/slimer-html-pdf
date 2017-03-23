@@ -8,10 +8,12 @@ exports.convertHtmlToPdf = function (test) {
     fs.unlinkSync('github.pdf')
   }
   const options = {
-    debug: true
+    debug: false
   }
   slimerHtmlPdf.convert('http://github.com', './github.pdf', options)
-  .then(() => {
+  .then((data) => {
+    const dataObject = JSON.parse(data)
+    console.log(dataObject.pdfBase64)
     test.ok(true, 'Successful')
     test.done()
   })
