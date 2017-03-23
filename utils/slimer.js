@@ -19,6 +19,6 @@ page.open(address, function() {
     pdfBase64
   }
   console.log(JSON.stringify(slimerResponse))
-  page.render(output, {format: 'pdf'})
+  //page.render(output, {format: 'pdf'})
   phantom.exit()
 })
